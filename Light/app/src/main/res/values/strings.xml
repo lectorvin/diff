@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Colorized</string>
+    <string name="check">Check color</string>
+    <string name="red_color">30B0B0</string>
+    <string name="minus">Minus</string>
+    <string name="plus">Plus</string>
+    <string name="num8">8</string>
+    <string name="numF">F</string>
+    <string name="numFF">FF</string>
+</resources>

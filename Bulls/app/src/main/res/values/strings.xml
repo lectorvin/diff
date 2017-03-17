@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Bulls&amp;Cows</string>
+    <string name="plus">Plus</string>
+    <string name="minus">Minus</string>
+    <string name="number">Number</string>
+    <string name="start_text">0</string>
+    <string name="start_attempt">20</string>
+    <string name="check">Check</string>
+    <string name="cow">Cow</string>
+    <string name="bull">Bull</string>
+    <string name="attempt">Attempt:</string>
+    <string name="loser">You lose.. Try again!</string>
+    <string name="winner">We have a winner!!!</string>
+    <string name="different">You have to choose different numbers!</string>
+</resources>
