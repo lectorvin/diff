@@ -12,4 +12,6 @@
     <string name="loser">You lose.. Try again!</string>
     <string name="winner">We have a winner!!!</string>
     <string name="different">You have to choose different numbers!</string>
+    <string name="score">Score</string>
+    <string name="strike">Strike</string>
 </resources>

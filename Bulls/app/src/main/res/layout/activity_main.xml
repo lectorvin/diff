@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,6 +11,7 @@
     <ImageButton
         android:id="@+id/plus0"
         android:contentDescription="@string/plus"
+        android:background="@android:color/transparent"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="310sp"
@@ -17,36 +19,36 @@
         android:scaleType="fitCenter"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/plus"
-        android:background="@android:color/white" />
+        app:srcCompat="@drawable/plus" />
 
     <ImageButton
         android:id="@+id/minus0"
         android:contentDescription="@string/minus"
+        android:background="@android:color/transparent"
         android:layout_width="50dp"
         android:layout_height="50dp"
         app:layout_constraintLeft_toLeftOf="@id/plus0"
         app:layout_constraintTop_toBottomOf="@id/plus0"
         android:layout_marginTop="50dp"
         app:srcCompat="@drawable/minus"
-        android:scaleType="fitCenter"
-        android:background="@android:color/white" />
+        android:scaleType="fitCenter" />
 
     <ImageButton
         android:id="@+id/plus1"
         android:contentDescription="@string/plus"
+        android:background="@android:color/transparent"
         android:layout_width="50dp"
         android:layout_height="50dp"
         app:layout_constraintTop_toTopOf="@id/plus0"
         app:layout_constraintLeft_toRightOf="@id/plus0"
         android:layout_marginStart="10dp"
         app:srcCompat="@drawable/plus"
-        android:scaleType="fitCenter"
-        android:background="@android:color/white"/>
+        android:scaleType="fitCenter" />
 
     <ImageButton
         android:id="@+id/minus1"
         android:contentDescription="@string/plus"
+        android:background="@android:color/transparent"
         android:layout_width="50dp"
         android:layout_height="50dp"
         app:layout_constraintTop_toBottomOf="@id/plus1"
@@ -54,24 +56,24 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="50sp"
         app:srcCompat="@drawable/minus"
-        android:scaleType="fitCenter"
-        android:background="@android:color/white"/>
+        android:scaleType="fitCenter" />
 
     <ImageButton
         android:id="@+id/plus2"
         android:contentDescription="@string/plus"
+        android:background="@android:color/transparent"
         android:layout_width="50dp"
         android:layout_height="50dp"
         app:layout_constraintTop_toTopOf="@id/plus1"
         app:layout_constraintLeft_toRightOf="@id/plus1"
         android:layout_marginStart="10dp"
         app:srcCompat="@drawable/plus"
-        android:scaleType="fitCenter"
-        android:background="@android:color/white"/>
+        android:scaleType="fitCenter" />
 
     <ImageButton
         android:id="@+id/minus2"
         android:contentDescription="@string/minus"
+        android:background="@android:color/transparent"
         android:layout_width="50dp"
         android:layout_height="50dp"
         app:layout_constraintTop_toBottomOf="@id/plus2"
@@ -79,24 +81,24 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="50sp"
         app:srcCompat="@drawable/minus"
-        android:scaleType="fitCenter"
-        android:background="@android:color/white"/>
+        android:scaleType="fitCenter" />
 
     <ImageButton
         android:id="@+id/plus3"
         android:contentDescription="@string/plus"
+        android:background="@android:color/transparent"
         android:layout_width="50dp"
         android:layout_height="50dp"
         app:layout_constraintTop_toTopOf="@id/plus2"
         app:layout_constraintLeft_toRightOf="@id/plus2"
         android:layout_marginStart="10dp"
         app:srcCompat="@drawable/plus"
-        android:scaleType="fitCenter"
-        android:background="@android:color/white"/>
+        android:scaleType="fitCenter" />
 
     <ImageButton
         android:id="@+id/minus3"
         android:contentDescription="@string/minus"
+        android:background="@android:color/transparent"
         android:layout_width="50dp"
         android:layout_height="50dp"
         app:layout_constraintTop_toBottomOf="@id/plus3"
@@ -104,8 +106,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="50sp"
         app:srcCompat="@drawable/minus"
-        android:scaleType="fitCenter"
-        android:background="@android:color/white"/>
+        android:scaleType="fitCenter" />
 
     <TextView
         android:id="@+id/num0"
@@ -158,10 +159,10 @@
     <Button
         android:id="@+id/check_button"
         android:onClick="checkButtonAction"
-        android:layout_width="100sp"
-        android:layout_height="50sp"
-        android:layout_marginTop="80sp"
-        android:background="?attr/colorButtonNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70sp"
+        android:background="@android:color/darker_gray"
         android:text="@string/check"
         android:textSize="15sp"
         app:layout_constraintLeft_toLeftOf="@id/plus0"
@@ -220,10 +221,9 @@
         android:contentDescription="@string/attempt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15sp"
         android:layout_marginStart="30sp"
         app:layout_constraintLeft_toRightOf="@id/check_button"
-        app:layout_constraintBottom_toBottomOf="@id/check_button" />
+        app:layout_constraintTop_toTopOf="@id/check_button" />
 
     <TextView
         android:id="@+id/attempt"
@@ -234,5 +234,42 @@
         android:layout_marginStart="10sp"
         app:layout_constraintLeft_toRightOf="@id/attempt_text"
         app:layout_constraintBottom_toBottomOf="@id/attempt_text" />
+
+    <TextView
+        android:id="@+id/strike_text"
+        android:text="@string/strike"
+        android:textSize="17sp"
+        app:layout_constraintLeft_toLeftOf="@id/attempt_text"
+        app:layout_constraintTop_toBottomOf="@id/attempt_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/strike"
+        android:text="@string/start_text"
+        android:textSize="17sp"
+        app:layout_constraintLeft_toLeftOf="@id/attempt"
+        app:layout_constraintTop_toBottomOf="@id/attempt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/score_text"
+        android:text="@string/score"
+        android:textSize="17sp"
+        app:layout_constraintLeft_toLeftOf="@id/strike_text"
+        app:layout_constraintTop_toBottomOf="@id/strike_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/score"
+        android:text="@string/start_text"
+        android:textSize="17sp"
+        app:layout_constraintLeft_toLeftOf="@id/strike"
+        app:layout_constraintTop_toBottomOf="@id/strike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 
 </android.support.constraint.ConstraintLayout>
